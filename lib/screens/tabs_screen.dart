@@ -21,6 +21,14 @@ class _TabsScreenState extends State<TabsScreen> {
   final GlobalKey<ScaffoldState> _key = GlobalKey();
   int currentPage = 0;
   List<Widget> screens = [];
+  PageController pageController = PageController();
+
+  void onTabPressed(int value) {
+    setState(() {
+      currentPage = value;
+    });
+    pageController.jumpToPage(value);
+  }
 
   @override
   void initState() {
@@ -96,7 +104,16 @@ class _TabsScreenState extends State<TabsScreen> {
           child: Text("Drawer"),
         ),
       ),
-      body: screens[currentPage],
+      body: PageView(
+        physics: const NeverScrollableScrollPhysics(),
+        controller: pageController,
+        onPageChanged: (value) {
+          setState(() {
+            currentPage = value;
+          });
+        },
+        children: screens,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
@@ -105,11 +122,7 @@ class _TabsScreenState extends State<TabsScreen> {
         currentIndex: currentPage,
         unselectedItemColor: Colors.blueGrey,
         selectedItemColor: AppColor.black,
-        onTap: (value) {
-          setState(() {
-            currentPage = value;
-          });
-        },
+        onTap: onTabPressed,
       ),
     );
   }

@@ -74,7 +74,7 @@ class TweetDetailsScreen extends StatelessWidget {
               Text(
                 DateFormat.jm()
                     .addPattern(" - ")
-                    .add_yMd()
+                    .add_yMMMEd()
                     .format(post.date ?? DateTime.now()),
                 style: const TextStyle(
                   color: AppColor.grey,

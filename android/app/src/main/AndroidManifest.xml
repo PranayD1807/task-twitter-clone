@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.task_twitter_clone">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="task_twitter_clone"
         android:name="${applicationName}"

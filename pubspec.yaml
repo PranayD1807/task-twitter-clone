@@ -77,6 +77,53 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: SofiaSans
+      fonts:
+        - asset: assets/fonts/static/SofiaSans-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/static/SofiaSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/static/SofiaSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/static/SofiaSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/static/SofiaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/static/SofiaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/static/SofiaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/static/SofiaSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/static/SofiaSans-Black.ttf
+          weight: 900
+        - asset: assets/fonts/static/SofiaSans-ThinItalic.ttf
+          weight: 100
+        - asset: assets/fonts/static/SofiaSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/static/SofiaSans-BlackItalic.ttf
+          weight: 900
+          style: italic
   # fonts:
   #   - family: Schyler
   #     fonts:

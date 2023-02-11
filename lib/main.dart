@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Twitter',
       theme: ThemeData(
+        fontFamily: "SofiaSans",
         scaffoldBackgroundColor: AppColor.appBarBackgroundColor,
         primarySwatch: AppColor.appPrimarySwatch,
         appBarTheme: const AppBarTheme(
